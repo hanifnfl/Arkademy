@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban Nomor 4</title>
+
+    <script>
+        function validateColor(input) {
+            var check, code, pjg;
+            if (typeof input == 'string') {
+                if (input[0] === "#") {
+                    pjg = input.length;
+                    if (pj === 4 || pjg === 7) {
+                        input = input.toLowerCase();
+                        check = '#' + ('00000000' + parseInt(input.substr(1), 16).toString(16)).substr(1 - pjg);
+                        return check === input;
+                    }
+                }
+            }
+            return false;
+        }
+
+        console.log(validateColor("#1234a6"));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

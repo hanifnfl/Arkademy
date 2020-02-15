@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban Nomor 2</title>
+    <script>
+        function isAcceptedUsername(username) {
+            var Regex = /^[a-z0-9]{5,9}$/i;
+            return Regex.test(username);
+        }
+
+        if (isAcceptedUsername("jok3r")) {
+            alert("Username Is Valid");
+        } else {
+            alert("Username Is Invalid");
+        }
+
+        function isAcceptedPassword(password) {
+            var reg = /^[A-Z]{1}[0-9]{3}[!@#$%^&*]{1}[a-zA-Z0-9]{,4}$/i;
+            return reg.test(password);
+        }
+
+        if (isAcceptedPassword("Dap0#r")) {
+            alert("Password Is Valid");
+        } else {
+            alert("Password Is Invalid");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

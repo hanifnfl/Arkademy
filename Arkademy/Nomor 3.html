@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban Nomor 3</title>
+    <script>
+        function countChar(kata, huruf) {
+            var hit_Huruf = 0;
+            for (var position = 0; position < kata.length; position++) {
+                if (kata.charAt(position) == huruf) {
+                    hit_Huruf += 1;
+                }
+            }
+            return hit_Huruf;
+
+        }
+
+        console.log(countChar('arka', 'a'));
+        console.log(countChar('javascript', 'x'));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
